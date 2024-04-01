@@ -1,0 +1,2 @@
+https://compphysics.github.io/ComputationalPhysics2/doc/LectureNotes/_build/html/resamplingmethods.html#jackknife-code-example 
+https://christian-fries.de/finmath/lecture/

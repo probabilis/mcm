@@ -1,0 +1,5 @@
+https://www.wikiwand.com/en/Ising_model
+https://rajeshrinet.github.io/blog/2014/ising-model/
+https://github.com/prtkm/ising-monte-carlo/blob/master/ising-monte-carlo.org
+https://github.com/MohamedElashri/IsingModel
+
