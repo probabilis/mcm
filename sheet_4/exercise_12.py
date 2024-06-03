@@ -37,9 +37,9 @@ def calc_jackknife(data : list):
     thetap /= float(len(data)-1)
     
     for i in range(1, len(data)):
-        sigma += math.pow(thetap - float(data[i] - 2), 2)
+        sigma += math.pow(thetap - float(data[i]), 2)
     
-    sigma += float(len(data) - 2) / float(len(data) - 1)
+    sigma *= float(len(data) - 2) / float(len(data) - 1)
     
     jk_est = data[0] - float(len(data) - 2) * (thetap - float(data[0]))
     error = math.sqrt(float(sigma))

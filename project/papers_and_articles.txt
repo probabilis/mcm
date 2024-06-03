@@ -1,0 +1,12 @@
+#articles:
+https://www.wikiwand.com/de/Problem_des_Handlungsreisenden
+https://www.wikiwand.com/de/Metropolis-Algorithmus
+https://www.wikiwand.com/de/Simulated_Annealing
+
+https://i.cs.hku.hk/~hkual/Notes/Greedy/Traveling%20salesman%20problem%20%28TSP%29.html
+https://co-enzyme.fr/blog/traveling-salesman-problem-tsp-in-cplex-opl-with-miller-tucker-zemlin-mtz-formulation/
+
+
+
+images:
+https://xkcd.com/399/

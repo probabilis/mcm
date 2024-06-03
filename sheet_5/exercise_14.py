@@ -63,7 +63,14 @@ time_steps = 1000
 
 M_array, LC = ising(time_steps, N, beta)
 
+plt.title("Magnetization over MC time $\\tau$")
 plt.plot(np.arange(0,time_steps,1), M_array)
+plt.xlabel("$\\tau$")
+plt.ylabel("<M>")
 plt.show()
+
+plt.title("Lattice configuration with spin +/- for 2D Ising Model")
 plt.imshow(LC)
+plt.xlabel("$x$")
+plt.ylabel("$y$")
 plt.show()

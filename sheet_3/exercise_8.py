@@ -51,7 +51,8 @@ def plot_uniform_vs_normal():
 
     axs[0].hist(samples_normal, 1000, density = True, histtype ='bar')
     axs[1].hist(samples_uniform, 1000, density = True, histtype ='bar')
-
+    axs[0].set_title("Sampled from normal distribution")
+    axs[1].set_title("Sampled from uniform distribution")
     plt.show()
 
 def multiple_samples(sample_size):

@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 from exercise_12 import jackknife_estimation
+from jackknife_mclect import jackknife_estimation as jk_sexty
 
 #################################################################
 
@@ -57,7 +58,13 @@ def jackknife_error(N : int, N_samp : int):
     N_blocks = blocking(N_raw, N_raw, N_b)
 
     pi_est = [pi_sampling(int(N_block)) for N_block in N_blocks]
-    stats_jk = jackknife_estimation(np.mean, pi_est, 10)
+
+
+    
+    #print("pi_est", pi_est)
+    stats_jk = jackknife_estimation(np.mean, pi_est, 100)
+    stats_jk_sexty = jk_sexty(np.mean, pi_est, 100)
+    print("SEXTY", stats_jk_sexty)
 
     jk_est = stats_jk["jk_est"]
     error =  stats_jk["error"]
@@ -76,4 +83,4 @@ def jackknife_error(N : int, N_samp : int):
     #print("Error to PI :", abs(np.pi - pi_est_average))
     return
 
-jackknife_error(10000, 100)
+jackknife_error(1000, 100)

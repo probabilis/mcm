@@ -49,6 +49,8 @@ def lang_equ_v2_plot():
     plt.plot(x,y)
     plt.show()
 
+lang_equ_v2_plot()
+
 #subpoint 2.1
 
 def continuum_extrapolation_v2():
@@ -65,9 +67,9 @@ cont_ext_v2_plot()
 
 #d =  xs_sm at delta_tau = 0 from linear regression
 
-def calc_n(index, d, c):
-    i = index
-    delta_tau = delta_taus[i]
-    return np.log( (xs_sm[i] - d) * 1/c) * 1/np.log(delta_tau)
+#def calc_n(index, d, c):
+#    i = index
+#    delta_tau = delta_taus[i]
+#   return np.log( (xs_sm[i] - d) * 1/c) * 1/np.log(delta_tau)
 
 
